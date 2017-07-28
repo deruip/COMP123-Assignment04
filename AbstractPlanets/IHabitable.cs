@@ -7,13 +7,13 @@ using System.Threading.Tasks;
  * Name: Aron Ly
  * Student #: 300932437
  * Date: July 27, 2017
- * Description: IHasMoons interface
+ * Description: IHabitable interface
  * Version: 0.1 - Interface created
  */
 namespace AbstractPlanets
 {
-    public interface IHasMoons
+    public interface IHabitable
     {
-        bool HasMoons();
+        bool Habitable();
     }
 }
