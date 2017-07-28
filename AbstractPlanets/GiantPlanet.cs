@@ -14,22 +14,40 @@ using System.Text;
  */
 namespace AbstractPlanets
 {
+    /// <summary>
+    /// GiantPlanet class that extends Planet parent class
+    /// Implements IHasMoons and IHasRings interfaces
+    /// </summary>
     public class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         //private instance variables
         private string _type;
 
         //constructors
+        /// <summary>
+        /// Main constructor for GiantPlanet class
+        /// Takes four arguments: name (string) - diameter (double) - mass (double) - type (string)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="diameter"></param>
+        /// <param name="mass"></param>
+        /// <param name="type"></param>
         public GiantPlanet(string name, double diameter, double mass, string type) : base(name, diameter, mass)
         {
             this._type = type;
         }
 
         //public methods
+        /// <summary>
+        /// Returns true if there is at least one moon
+        /// </summary>
         public bool HasMoons()
         {
             return (this.MoonCount > 0);
         }
+        /// <summary>
+        /// Returns true if there is at least one ring
+        /// </summary>
         public bool HasRings()
         {
             return (this.RingCount > 0);

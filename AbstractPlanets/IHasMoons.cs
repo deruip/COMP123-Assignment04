@@ -14,6 +14,9 @@ namespace AbstractPlanets
 {
     public interface IHasMoons
     {
+        /// <summary>
+        /// Returns true if planet has at least one moon
+        /// </summary>
         bool HasMoons();
     }
 }

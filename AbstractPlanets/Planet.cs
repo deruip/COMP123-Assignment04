@@ -9,9 +9,13 @@ using System.Text;
  * Description: Abstract Planet superclass
  * Version: 0.1 - Class created
  * Version: 0.2 - Implemented private instance variables, public properties, constructor and overrided ToString method
+ * Version: 0.3 - Added units for ToString() method
  */
 namespace AbstractPlanets
 {
+    /// <summary>
+    /// Abstract Planet superclass that GiantPlanet and TerrestrialPlanet derives from
+    /// </summary>
     public abstract class Planet
     {
         //private instance variables
@@ -91,6 +95,13 @@ namespace AbstractPlanets
         }
 
         //constructors
+        /// <summary>
+        /// Main constructor for Planet superclass
+        /// Takes three arguments: name (string) - diameter (double) - mass (double)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="diameter"></param>
+        /// <param name="mass"></param>
         public Planet(string name, double diameter, double mass)
         {
             this._name = name;
@@ -99,6 +110,9 @@ namespace AbstractPlanets
         }
 
         //public methods
+        /// <summary>
+        /// Overrides the built-in ToString() function to display desired output
+        /// </summary>
         public override string ToString()
         {
             return string.Format("Name: {0}\nDiameter: {1} km - Mass: {2} Earth Masses", Name, Diameter, Mass);

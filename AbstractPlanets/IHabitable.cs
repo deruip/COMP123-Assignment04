@@ -14,6 +14,9 @@ namespace AbstractPlanets
 {
     public interface IHabitable
     {
+        /// <summary>
+        /// Returns true if planet is habitable
+        /// </summary>
         bool Habitable();
     }
 }

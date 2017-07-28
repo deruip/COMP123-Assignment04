@@ -14,6 +14,9 @@ namespace AbstractPlanets
 {
     public interface IHasRings
     {
+        /// <summary>
+        /// Returns true if planet has at least one ring
+        /// </summary>
         bool HasRings();
     }
 }
