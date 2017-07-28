@@ -23,7 +23,6 @@ namespace AbstractPlanets
         {
             this._oxygen = oxygen;
         }
-        //private methods
 
         //public methods
         public bool HasMoons()

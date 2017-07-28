@@ -97,12 +97,11 @@ namespace AbstractPlanets
             this._diameter = diameter;
             this._mass = mass;
         }
-        //private methods
 
         //public methods
         public override string ToString()
         {
-            return string.Format("Name: {0}\nDiameter: {1} - Mass: {2}", Name, Diameter, Mass);
+            return string.Format("Name: {0}\nDiameter: {1} km - Mass: {2} Earth Masses", Name, Diameter, Mass);
         }
 
     }
