@@ -12,7 +12,7 @@ using System.Text;
  */
 namespace AbstractPlanets
 {
-    public class GiantPlanet : Planet
+    public class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         //private instance variables
         private string _type;
