@@ -8,6 +8,7 @@ using System.Text;
  * Date: July 27, 2017
  * Description: Abstract Planet superclass
  * Version: 0.1 - Class created
+ * Version: 0.2 - Implemented private instance variables, public properties, constructor and overrided ToString method
  */
 namespace AbstractPlanets
 {
@@ -92,9 +93,9 @@ namespace AbstractPlanets
         //constructors
         public Planet(string name, double diameter, double mass)
         {
-            _name = name;
-            _diameter = diameter;
-            _mass = mass;
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
         }
         //private methods
 
